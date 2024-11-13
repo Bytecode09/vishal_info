@@ -885,6 +885,10 @@
 	</section>
 	<!--================Contact Area =================-->
 
+	
+
+
+
 	<!--================Footer Area =================-->
 	<footer class="footer_area">
 		<div class="container">
@@ -919,7 +923,87 @@
 	</footer>
 	<!--================End Footer Area =================-->
 
+
+<!-- Add jQuery CDN in your HTML file head section if not included already -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Include this script after the jQuery library -->
+<script>
+    $(document).ready(function () {
+        $('#contactForm').on('submit', function (e) {
+            e.preventDefault(); // Prevent form from submitting
+
+            // Get form field values
+            const name = $('#name').val().trim();
+            const email = $('#email').val().trim();
+            const phone = $('#phone').val().trim();
+            const message = $('#message').val().trim();
+
+            // Validation patterns
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            const phonePattern = /^\+?\d{10,14}$/; // Accepts 10-14 digits with optional '+'
+
+            // Validation checks
+            if (name.length < 3) {
+                alert("Name must be at least 3 characters long.");
+                return;
+            }
+            if (!emailPattern.test(email)) {
+                alert("Please enter a valid email address.");
+                return;
+            }
+            if (!phonePattern.test(phone)) {
+                alert("Please enter a valid phone number.");
+                return;
+            }
+            if (message.length < 5) {
+                alert("Message must be at least 5 characters long.");
+                return;
+            }
+
+            // Show success toast
+            showToast("Your message has been sent successfully!");
+
+            // Clear form fields
+            $('#contactForm')[0].reset();
+
+            // Forward data to predefined email (use backend in real cases)
+            window.location.href = `mailto:abc@gmail.com?subject=${encodeURIComponent('Contact Form Submission')}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`)}`;
+        });
+
+        // Toast function
+        function showToast(message) {
+            const toast = $('<div class="toast"></div>').text(message);
+            $('body').append(toast);
+            toast.fadeIn(400).delay(2000).fadeOut(400, function () {
+                $(this).remove();
+            });
+        }
+    });
+</script>
+
+<!-- Add these CSS styles for toast -->
+<style>
+    .toast {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        z-index: 1000;
+        display: none;
+    }
+</style>
+
 	<!-- Optional JavaScript -->
+
+
+
+
+
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/popper.js"></script>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <!-- Link to jQuery for validation -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Link to Toast CSS -->
+    <style>
+        /* Basic styling for toast message */
+        #toast {
+            visibility: hidden;
+            min-width: 250px;
+            margin: -125px 0 0 -125px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 2px;
+            padding: 16px;
+            position: fixed;
+            z-index: 1;
+            bottom: 30px;
+            left: 50%;
+            font-size: 17px;
+        }
+        #toast.show {
+            visibility: visible;
+            -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+            animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        }
+        @-webkit-keyframes fadein {
+            from {bottom: 0; opacity: 0;} 
+            to {bottom: 30px; opacity: 1;}
+        }
+        @keyframes fadein {
+            from {bottom: 0; opacity: 0;}
+            to {bottom: 30px; opacity: 1;}
+        }
+        @-webkit-keyframes fadeout {
+            from {bottom: 30px; opacity: 1;} 
+            to {bottom: 0; opacity: 0;}
+        }
+        @keyframes fadeout {
+            from {bottom: 30px; opacity: 1;}
+            to {bottom: 0; opacity: 0;}
+        }
+    </style>
+</head>
+<body>
+
+<section class="contact_area" id="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Reach out for any inquiries or feedback.</p>
+
+        <form id="contactForm" action="mailto:abc@gmail.com" method="post">
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <input type="email" id="email" name="email" placeholder="Enter email address" required>
+            <input type="text" id="phone" name="phone" placeholder="Enter phone number" required>
+            <textarea id="message" name="message" rows="4" placeholder="Enter your message" required></textarea>
+            <button type="button" id="submitBtn">Send Message</button>
+        </form>
+
+        <!-- Toast message for success notification -->
+        <div id="toast">Your message has been successfully sent!</div>
+    </div>
+</section>
+
+<script>
+    $(document).ready(function() {
+        $('#submitBtn').click(function() {
+            // Validate fields
+            const name = $('#name').val().trim();
+            const email = $('#email').val().trim();
+            const phone = $('#phone').val().trim();
+            const message = $('#message').val().trim();
+
+            // Basic validation rules
+            const isValidName = name.length >= 3;
+            const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+            const isValidPhone = /^[0-9]{10}$/.test(phone);
+            const isValidMessage = message.length >= 5;
+
+            if (!isValidName) {
+                alert('Name should be at least 3 characters long.');
+                return;
+            }
+            if (!isValidEmail) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+            if (!isValidPhone) {
+                alert('Please enter a valid 10-digit phone number.');
+                return;
+            }
+            if (!isValidMessage) {
+                alert('Message should be at least 5 characters long.');
+                return;
+            }
+
+            // Show success toast
+            const toast = $('#toast');
+            toast.addClass('show');
+            setTimeout(() => toast.removeClass('show'), 3000);
+
+            // Clear form fields
+            $('#contactForm')[0].reset();
+
+            // Send email
+            $('#contactForm').submit();
+        });
+    });
+</script>
+
+</body>
+</html>
