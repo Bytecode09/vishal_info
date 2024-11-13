@@ -209,6 +209,9 @@ button:focus {
   height: 100%;
   width: 100%; }
 
+  html {
+    scroll-behavior: smooth;
+  }
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 .header_area {
@@ -3518,7 +3521,7 @@ h6 {
   .footer_area:before {
     content: '';
     position: absolute;
-    top: -200px;
+    top: 60px;
     left: 0px;
     right: 0px;
     bottom: 0px;
