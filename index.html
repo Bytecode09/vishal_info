@@ -19,14 +19,15 @@
 </head>
 <script>
 	function downloadFile() {
-	  const link = document.createElement('a');
-	  link.href = 'img/resume.pdf';
-	  link.download = 'resume.pdf'; // The name for the downloaded file
-	  document.body.appendChild(link);
-	  link.click();
-	  document.body.removeChild(link);
+		const link = document.createElement('a');
+		link.href = 'img/resume.pdf';
+		link.download = 'resume.pdf'; // The name for the downloaded file
+		document.body.appendChild(link);
+		link.click();
+		document.body.removeChild(link);
 	}
-  </script>
+</script>
+
 <body>
 
 	<!--================ Start Header Area =================-->
@@ -36,8 +37,9 @@
 				<div class="container">
 					<!-- Brand and toggle get grouped for better mobile display -->
 					<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<button class="navbar-toggler" type="button" data-toggle="collapse"
+						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
@@ -50,7 +52,7 @@
 							<li class="nav-item"><a class="nav-link" href="#resume">resume</a></li>
 							<li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
 							<li class="nav-item"><a class="nav-link" href="#service">Services</a></li>
-							
+
 							<!-- <li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								 aria-expanded="false">Pages</a>
@@ -83,19 +85,21 @@
 				<div class="row">
 					<div class="col-lg-7">
 						<div class="banner_content">
-							<h3 class="text-uppercase">Hell0</h3>
-							<h1 class="text-uppercase">I am Vishal Vasoya</h1>
+							<h3 class="text-uppercase">Hello!</h3>
+							<h1 class="text-uppercase">I’m Vishal Vasoya</h1>
 							<h5 class="text-uppercase">Senior Data Scientist</h5>
 							<div class="d-flex align-items-center">
 								<a class="primary_btn" href="#contact"><span>Hire Me</span></a>
-								<a class="primary_btn tr-bg" href="img/resume.pdf" target="_blank"><span>Get CV</span></a>
+								<a class="primary_btn tr-bg" href="img/resume.pdf" target="_blank"><span>Get
+										CV</span></a>
 							</div>
-							<div >
-									<a href="#"><i class="fa fa-linkedin-square" ></i></a>
-									<a href="#"><i class="fa fa-github" ></i></a>
-									<a href="#"><i class="fa fa-whatsapp"></i></a>
-									<a href="#"><i class="fa fa-slack"></i></a>
-									<a href="#"><i class="fa fa-skype"></i></a>
+							<div>
+								<a href="https://www.linkedin.com/in/vishalvasoya/" target="_blank"><i
+										class="fa fa-linkedin-square"></i></a>
+								<a href="https://github.com/VishalVasoya1" target="_blank"><i class="fa fa-github"></i></a>
+								<a href="#" target="_blank"><i class="fa fa-whatsapp"></i></a>
+								<a href="#" target="_blank"><i class="fa fa-slack"></i></a>
+								<a href="#" target="_blank"><i class="fa fa-skype"></i></a>
 							</div>
 						</div>
 					</div>
@@ -111,46 +115,54 @@
 	<!--================ End Home Banner Area =================-->
 
 
-	
+
 
 	<!--================ Start About Us Area =================-->
 	<!-- <section class="about_area section_gap"> -->
-	<section class="about_area" id="about">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-8 text-center">
-					<div class="main_title">
-						<h2>About Me</h2>
-						<p>Is give may shall likeness made yielding spirit a itself togeth created after sea is in beast <br>
-							 beginning signs open god you're gathering ithe</p>
+		<section class="about_area" id="about">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-12 text-center">
+						<div class="main_title">
+							<h2>About Me</h2>
+							<p>
+								<strong>Passionate Senior Data Scientist</strong> with extensive experience in developing and deploying <strong>AI solutions</strong>, including <strong>large language models</strong> and <strong>custom chatbots</strong>. Skilled in leveraging cloud platforms like <strong>Azure</strong> and <strong>AWS</strong> to deploy scalable, reliable, and secure AI applications. I am dedicated to driving innovation and enhancing <strong>efficiency</strong>, <strong>engagement</strong>, and <strong>data-driven decision-making</strong> through advanced <strong>machine learning</strong> and <strong>cloud technologies</strong>.
+							</p>
+						</div>
+					</div>
+				</div>
+		
+				<!-- Add some margin-top to create space between the sections -->
+				<div class="row justify-content-center align-items-center" style="margin-top: 50px;">
+					<!-- Left Column - Image -->
+					<div class="col-lg-5 text-center">
+						<div class="about_img">
+							<img class="img-fluid" src="img/about-us.png" alt="">
+						</div>
+					</div>
+		
+					<!-- Right Column - About Me Content -->
+					<div class="col-lg-5 offset-lg-1">
+						<div class="main_title text-left">
+							<h2>Let’s <br> Introduce About <br> Myself</h2>
+							<p>
+								I am a <strong>Senior Data Scientist</strong> with over 4 years of experience in developing and deploying <strong>large language models (LLMs)</strong>, building <strong>custom chatbots</strong>, and designing <strong>business-specific AI tools</strong>. My expertise extends to deploying <strong>AI solutions</strong> on cloud platforms like <strong>Azure</strong> and <strong>AWS</strong>, ensuring seamless integration and scalability. My key skills include:
+							</p>
+							<ul>
+								<li>End-to-end <strong>design and deployment of machine learning systems</strong> on <strong>Azure</strong> and <strong>AWS</strong>.</li>
+								<li>Building <strong>scalable APIs</strong> and <strong>advanced data extraction pipelines</strong> in the cloud environment.</li>
+								<li>Deploying and optimizing <strong>large language models</strong> and <strong>custom AI solutions</strong> in the cloud.</li>
+								<li>Proficient in <strong>Python, SQL, TensorFlow, PyTorch</strong>, and various machine learning frameworks.</li>
+								<li>Expertise in <strong>cloud architecture</strong> and integrating <strong>AI solutions</strong> with existing infrastructures.</li>
+								<li>Strong focus on <strong>data visualization</strong>, <strong>automation</strong>, and delivering high-precision solutions.</li>
+								<li>Proven ability to enhance <strong>operational efficiency</strong>, <strong>user engagement</strong>, and <strong>decision-making processes</strong>.</li>
+							</ul>
+							<a class="primary_btn" onclick="downloadFile()" href="#"><span>Download CV</span></a>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="row justify-content-start align-items-center">
-				<div class="col-lg-5">
-					<div class="about_img">
-						<img class="" src="img/about-us.png" alt="">
-					</div>
-				</div>
-
-				<div class="offset-lg-1 col-lg-5">
-					<div class="main_title text-left">
-						<h2>let’s <br>
-							Introduce about <br>
-							myself</h2>
-						<!-- <p>
-							Whose given. Were gathered. There first subdue greater. Bearing you Whales heaven 
-							midst their. Beast creepeth. Fish days.
-						</p> -->
-						<p>
-							Senior Data Scientist with over 4 years of experience in developing and deploying advanced machine learning models and data extraction systems. Demonstrated expertise in building deep learning models, fine-tuning language models, and creating scalable APIs. Proficient in Python, SQL, TensorFlow, and various ML frameworks, with a strong background in data visualization and analysis. Proven ability to deliver high-precision solutions that enhance operational efficiency and user engagement. Adept at working in fast-paced environments and collaborating with diverse teams to achieve project goals.
-						</p>
-						<a class="primary_btn"onclick="downloadFile()"  href="#"><span>Download CV</span></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+		</section>
 	<!--================ End About Us Area =================-->
 
 	<!--================ Srart Brand Area =================-->
@@ -247,217 +259,159 @@
 	<!--================ End Brand Area =================-->
 
 
-	
+
 
 	<!--================ Start resume Area =================-->
 	<section class="resume" id="resume">
 		<div class="container">
 			<div class="row justify-content-center">
-				<div class="col-lg-8 text-center">
+				<div class="col-lg-12 text-center">
 					<div class="main_title">
-						<h2>Resume </h2>
+						<h2>Resume</h2>
 						<p>
-							Is give may shall likeness made yielding spirit a itself togeth created 
-							after sea <br> is in beast beginning signs open god you're gathering ithe
+							A snapshot of my professional journey, showcasing my expertise in <strong>AI</strong>, <strong>machine learning</strong>, and <strong>data science</strong>. Below you'll find details about my <strong>experience</strong>, <strong>education</strong>, <strong>skills</strong>, and key <strong>projects</strong> that highlight my contributions and growth in the tech industry.
 						</p>
 					</div>
 				</div>
 			</div>
+
+
+			<div class="row resume-timeline">
+				<div class="col-twelve resume-header">
+					<h2>Work Experience</h2>
+				</div>
 			
-
-		<div class="row resume-timeline">
-
-			<div class="col-twelve resume-header">
-	
-				<h2>Work Experience</h2>
-	
-			</div>
-	
-			<div class="col-twelve">
-	
-				<div class="timeline-wrap">
-	
-					<div class="timeline-block">
-	
-						<div class="timeline-ico">
-							<i class="fa fa-graduation-cap"></i>
+				<div class="col-twelve">
+					<div class="timeline-wrap">
+						<div class="timeline-block">
+							<div class="timeline-ico">
+								<i class="fa fa-briefcase"></i>
+							</div>
+						
+							<div class="timeline-header">
+								<h4>Senior Data Scientist</h4>
+								<p><strong>Feb 2022 - Present</strong></p>
+							</div>
+						
+							<div class="timeline-content">
+								<h4>BitCoding Solutions (Gujarat, India)</h4>
+								<ul>
+									<li>Spearheaded the development of AI-driven chatbots using <strong>Rasa</strong> and <strong>Large Language Models (LLMs)</strong>, integrating them with <strong>WhatsApp</strong>, <strong>Telegram</strong>, and web platforms to enhance customer engagement and service efficiency.</li>
+									<li>Designed and implemented an insurance-focused chatbot, incorporating advanced scenario handling and multi-platform support for a seamless user experience.</li>
+									<li>Engineered a live chat API system using <strong>Kafka</strong> to support real-time customer interactions and parallel request handling, optimizing the customer support process.</li>
+									<li>Fine-tuned and deployed LLM models for accurate content generation, including specialized applications such as vegan food recipes, demonstrating a keen ability to customize models for specific domains.</li>
+									<li>Implemented <strong>RAG</strong> architecture to improve FAQ response accuracy and utilized <strong>CRAG</strong> for effective response generation and validation, enhancing chatbot performance.</li>
+									<li>Dockerized machine learning models for deployment in containerized environments on <strong>Amazon ECS</strong> and <strong>EC2</strong> instances, optimizing cloud infrastructure utilization on AWS.</li>
+								</ul>
+							</div>
 						</div>
-	
-						<div class="timeline-header">
-							<h4>Senior Data Scientist</h4>
-							<p>Feb 2022 - Present</p>
+						
+						<div class="timeline-block">
+							<div class="timeline-ico">
+								<i class="fa fa-briefcase"></i>
+							</div>
+						
+							<div class="timeline-header">
+								<h4>Associate Data Scientist</h4>
+								<p>Jan 2021 - Jan 2022</p>
+							</div>
+						
+							<div class="timeline-content">
+								<h4>Actyv.ai (Bengaluru, India)</h4>
+								<ul>
+									<li>Developed a deep learning-based ensemble document classification model that reduced manual intervention by 80% and achieved 85% precision on test data.</li>
+									<li>Optimized model performance with advanced preprocessing and tuning techniques, enhancing accuracy and robustness.</li>
+									<li>Deployed the model via a scalable API on <strong>Amazon ECS</strong> using <strong>Docker</strong>, ensuring smooth integration with existing systems.</li>
+									<li>Integrated <strong>Elastic Search</strong> with <strong>Spring Boot</strong> to accelerate SQL query times, improving data retrieval efficiency.</li>
+									<li>Enabled real-time updates in Elastic Search by connecting database events with <strong>Kafka</strong>, minimizing failure rates to nearly 0%.</li>
+								</ul>
+							</div>
 						</div>
-	
-						<div class="timeline-content">
-							<h4>BitCoding Solutions</h4>
-							<p>I developed AI-driven chatbots using Rasa and LLMs, integrating them with WhatsApp, Telegram, and web platforms to enhance customer engagement. This includes designing an insurance-focused chatbot and engineering a live chat API using Kafka for real-time support. Additionally, I containerized models for AWS deployment and created a car damage detection model with Detectron2, achieving 85% recall for accurate damage identification.</p>
-						</div>
-	
-					</div> 
-
-					<div class="timeline-block">
-	
-						<div class="timeline-ico">
-							<i class="fa fa-graduation-cap"></i>
-						</div>
-	
-						<div class="timeline-header">
-							<h4>Associate Data Scientist</h4>
-							<p>Jan 2020 - Jan 2022</p>
-						</div>
-	
-						<div class="timeline-content">
-							<h4>Actyv.ai</h4>
-							<p>I developed a deep learning-based ensemble document classification model that reduced manual intervention by 80% and achieved 85% precision on test data. The model was optimized with advanced preprocessing and tuning techniques, and deployed via a scalable API on Amazon ECS using Docker. Additionally, I integrated Elastic Search with Spring Boot to accelerate SQL query times and used Kafka to enable real-time database updates in Elastic Search, minimizing failure rates to nearly 0%.</p>
-						</div>
-	
-					</div> 
-	
-					<!-- <div class="timeline-block">
-	
-						<div class="timeline-ico">
-							<i class="fa fa-graduation-cap"></i>
-						</div>
-	
-						<div class="timeline-header">
-							<h3>Front-end Developer</h3>
-							<p>July 2014 - June 2015</p>
-						</div>
-	
-						<div class="timeline-content">
-							<h4>Super Cool Agency</h4>
-							<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
-						</div>
-	
 					</div>
-	
-					<div class="timeline-block">
-	
-						<div class="timeline-ico">
-							<i class="fa fa-graduation-cap"></i>
-						</div>
-	
-						<div class="timeline-header">
-							<h3>Web Designer</h3>
-							<p>May 2013 - June 2014</p>
-						</div>
-	
-						<div class="timeline-content">
-							<h4>Great Designs Studio</h4>
-							<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
-						</div>
-	
-					</div>  -->
-	
-				</div> 
-	
-			</div>
-
-			<div class="col-twelve resume-header">
-	
-				<h2>Education</h2>
-	
-			</div>
-	
-			<div class="col-twelve">
-	
-				<div class="timeline-wrap">
-	
-					<div class="timeline-block">
-	
-						<div class="timeline-ico">
-							<i class="fa fa-briefcase"></i>
-						</div>
-	
-						<div class="timeline-header">
-							<h4>M.Sc. (Data Science)</h4>
-							<p>Master</p>
-						</div>
-	
-						<div class="timeline-content">
-							<h4>Dhirubhai Ambani Institute of Information and Communication Technology (DAIICT)</h4>
-							<p>I completed my M.Sc. in Data Science from Dhirubhai Ambani Institute of Information and Communication Technology (DAIICT), gaining expertise in data analysis, machine learning, and statistical modeling. </p>
-						</div>
-	
-					</div> 
-
-					<div class="timeline-block">
-	
-						<div class="timeline-ico">
-							<i class="fa fa-briefcase"></i>
-						</div>
-	
-						<div class="timeline-header">
-							<h4>Computer Application</h4>
-							<p>Bachelor (B.C.A.)</p>
-						</div>
-	
-						<div class="timeline-content">
-							<h4>Veer Narmad South Gujarat University (VNSGU)</h4>
-							<p>I completed my M.Sc. in Data Science from Dhirubhai Ambani Institute of Information and Communication Technology (DAIICT), gaining expertise in data analysis, machine learning, and statistical modeling. </p>
-						</div>
-	
-					</div> 
-
-	
-				</div> 
-	
-			</div>
+				</div>
 			
-			<div class="col-twelve resume-header">
-	
-				<h2>Achievement</h2>
-	
-			</div>
-	
-			<div class="col-twelve">
-	
-				<div class="timeline-wrap">
-	
-					<div class="timeline-block">
-	
-						<div class="timeline-ico">
-							<i class="fa fa-trophy"></i>
-						</div>
-	
-						<div class="timeline-header">
-							<h4>Achievement 1</h4>
-							<p><a href="https://www.credly.com/badges/39bc72d4-b5fe-4d2f-9748-f6000c1cd079" target="_blank" style="color: #4458DC;">Credential Link</a></p>
-						</div>
-	
-						<div class="timeline-content">
-							<h4>Machine Learning Using SAS Viya</h4>
-							<p>I completed my M.Sc. in Data Science from Dhirubhai Ambani Institute of Information and Communication Technology (DAIICT), gaining expertise in data analysis, machine learning, and statistical modeling. </p>
-						</div>
-	
-					</div> 
-
-					<div class="timeline-block">
-	
-						<div class="timeline-ico">
-							<i class="fa fa-trophy"></i>
-						</div>
-	
-						<div class="timeline-header">
-							<h4>Achievement 2</h4>
-							<p><a href="https://www.credly.com/badges/fd1cb024-8d52-442d-bc51-f60b869665a7" target="_blank"style="color: #4458DC;">Credential Link</a></p>
-						</div>
-	
-						<div class="timeline-content">
-							<h4>SAS Programming Certification Fast Track</h4>
-							<p>I completed my M.Sc. in Data Science from Dhirubhai Ambani Institute of Information and Communication Technology (DAIICT), gaining expertise in data analysis, machine learning, and statistical modeling. </p>
-						</div>
-	
-					</div> 
-
-	
-				</div> 
-	
-			</div>
+				<div class="col-twelve resume-header">
+					<h2>Education</h2>
+				</div>
 			
+				<div class="col-twelve">
+					<div class="timeline-wrap">
+						<div class="timeline-block">
+							<div class="timeline-ico">
+								<i class="fa fa-graduation-cap"></i>
+							</div>
 			
-
-		</div> 
+							<div class="timeline-header">
+								<h4><strong>M.Sc. in Data Science</strong></h4>
+								<p><strong>Master's</strong></p>
+							</div>
+			
+							<div class="timeline-content">
+								<h4>Dhirubhai Ambani Institute of Information and Communication Technology (DAIICT)</h4>
+								<p>Completed M.Sc. in Data Science, with specialization in advanced <strong>data analysis</strong>, <strong>machine learning</strong>, <strong>computer vision</strong>, and <strong>natural language processing (NLP)</strong>.</p>
+							</div>
+						</div>
+			
+						<div class="timeline-block">
+							<div class="timeline-ico">
+								<i class="fa fa-graduation-cap"></i> fa fa-briefcase
+							</div>
+			
+							<div class="timeline-header">
+								<h4><strong>B.C.A. in Computer Applications</strong></h4>
+								<p><strong>Bachelor's</strong></p>
+							</div>
+			
+							<div class="timeline-content">
+								<h4>Veer Narmad South Gujarat University (VNSGU)</h4>
+								<p>Earned a B.C.A. with a focus on <strong>computer applications</strong> and <strong>software development</strong>.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+				<div class="col-twelve resume-header">
+					<h2>Achievement</h2>
+				</div>
+			
+				<div class="col-twelve">
+					<div class="timeline-wrap">
+						<div class="timeline-block">
+							<div class="timeline-ico">
+								<i class="fa fa-trophy"></i>
+							</div>
+			
+							<div class="timeline-header">
+								<h4><strong>Machine Learning Using SAS Viya</strong></h4>
+								<p><a href="https://www.credly.com/badges/39bc72d4-b5fe-4d2f-9748-f6000c1cd079" target="_blank" style="color: #4458DC;">Credential Link</a></p>
+							</div>
+			
+							<div class="timeline-content">
+								<p>
+									I completed the <strong>Machine Learning Using SAS Viya</strong> certification, demonstrating expertise in machine learning algorithms and model development.
+								</p>
+							</div>
+						</div>
+			
+						<div class="timeline-block">
+							<div class="timeline-ico">
+								<i class="fa fa-trophy"></i>
+							</div>
+			
+							<div class="timeline-header">
+								<h4><strong>SAS Programming Certification Fast Track</strong></h4>
+								<p><a href="https://www.credly.com/badges/fd1cb024-8d52-442d-bc51-f60b869665a7" target="_blank" style="color: #4458DC;">Credential Link</a></p>
+							</div>
+			
+							<div class="timeline-content">
+								<p>
+									I earned the <strong>SAS Programming Certification Fast Track</strong>, enhancing my skills in SAS programming and data manipulation.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
 		</div>
 	</section>
@@ -483,7 +437,7 @@
 					<li data-filter=".upcoming">upcoming</li>
 				</ul>
 			</div>
-	
+
 			<div class="filters-content">
 				<div class="row portfolio-grid justify-content-center">
 					<div class="col-lg-4 col-md-6 all latest">
@@ -778,7 +732,7 @@
 					<div class="main_title">
 						<h2>service offers </h2>
 						<p>
-							Is give may shall likeness made yielding spirit a itself togeth created 
+							Is give may shall likeness made yielding spirit a itself togeth created
 							after sea <br> is in beast beginning signs open god you're gathering ithe
 						</p>
 					</div>
@@ -825,8 +779,7 @@
 				<div class="col-lg-8 text-center">
 					<div class="main_title">
 						<h2>Contact Us</h2>
-						<p>Is give may shall likeness made yielding spirit a itself togeth created after sea is in beast <br>
-							 beginning signs open god you're gathering ithe</p>
+						<p>We'd love to hear from you! Reach out for any inquiries or feedback, and we'll get back to you as soon as possible.</p>
 					</div>
 				</div>
 			</div>
@@ -836,17 +789,21 @@
 						<div class="info_item">
 							<i class="lnr lnr-home"></i>
 							<h6>Address</h6>
-							<p>Gujarat, India</p>
+							<p style="font-weight: bold; font-size: 17px; font-family: 'Roboto', sans-serif; color: #585656;">Gujarat, India</p>
 						</div>
 						<div class="info_item">
 							<i class="lnr lnr-phone-handset"></i>
 							<h6><a>Phone No</a></h6>
-							<p><a href="tel:+917285052158" style="color:#777">+91 72850 52158</a></p>
+							<p style="font-weight: bold; font-size: 17px; font-family: 'Roboto', sans-serif; color: #585656;">
+								<a href="tel:+917285052158" style="color:#585656;">+91 72850 52158</a>
+							</p>
 						</div>
 						<div class="info_item">
 							<i class="lnr lnr-envelope"></i>
 							<h6><a>Email</a></h6>
-							<p><a href="mailto:vasoyavishal33@gmail.com" style="color:#777">vasoyavishal33@gmail.com</a></p>
+							<p style="font-weight: bold; font-size: 17px; font-family: 'Roboto', sans-serif; color: #585656;">
+								<a href="mailto:vasoyavishal33@gmail.com" style="color:#585656;">vasoyavishal33@gmail.com</a>
+							</p>
 						</div>
 					</div>
 				</div>
@@ -854,18 +811,18 @@
 					<form class="row contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
 						<div class="col-md-6">
 							<div class="form-group">
-								<input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+								<input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" style="border: 2px solid #000; padding: 15px; font-size: 16px; border-radius: 5px; font-weight: bold;">
 							</div>
 							<div class="form-group">
-								<input type="email" class="form-control" id="email" name="email" placeholder="Enter email address">
+								<input type="email" class="form-control" id="email" name="email" placeholder="Enter email address" style="border: 2px solid #000; padding: 15px; font-size: 16px; border-radius: 5px; font-weight: bold;">
 							</div>
 							<div class="form-group">
-								<input type="text" class="form-control" id="subject" name="subject" placeholder="Enter Subject">
+								<input type="text" class="form-control" id="subject" name="subject" placeholder="Enter Subject" style="border: 2px solid #000; padding: 15px; font-size: 16px; border-radius: 5px; font-weight: bold;">
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="form-group">
-								<textarea class="form-control" name="message" id="message" rows="1" placeholder="Enter Message"></textarea>
+								<textarea class="form-control" name="message" id="message" rows="5" placeholder="Enter Message" style="border: 2px solid #000; padding: 15px; font-size: 16px; border-radius: 5px; font-weight: bold;"></textarea>
 							</div>
 						</div>
 						<div class="col-md-12 text-right">
@@ -876,14 +833,6 @@
 					</form>
 				</div>
 			</div>
-			<!-- <div id="mapBox" class="mapBox" 
-				data-lat="40.701083" 
-				data-lon="-74.1522848" 
-				data-zoom="13" 
-				data-info="PO Box CT16122 Collins Street West, Victoria 8007, Australia."
-				data-mlat="40.701083"
-				data-mlon="-74.1522848">
-			</div> -->
 		</div>
 	</section>
 	<!--================Contact Area =================-->
@@ -913,8 +862,10 @@
 			<div class="row footer_bottom justify-content-center">
 				<p class="col-lg-8 col-sm-12 footer-text">
 					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+					Copyright &copy;
+					<script>document.write(new Date().getFullYear());</script> All rights reserved
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				</p>
 			</div>
 		</div>
 	</footer>
